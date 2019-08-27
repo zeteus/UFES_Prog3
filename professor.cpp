@@ -1,0 +1,92 @@
+#ifndef _PROFESSOR_H_
+#define _PROFESSOR_H_
+
+#include <iostream>
+#include <ctime>
+#include <string>
+#include <vector>
+
+#include "turma.h"
+
+class Professor{
+    /* ATRIBUTOS */
+    private:
+        Date dataAdmissao, dataDemissao;
+        string CPF, RG, endereco, telefone, email, nome;
+        static int qtdProfessores = 0;
+        
+        vector <Turma*> turmas;
+
+    /* METODOS */
+        void setProfessor(Professor *p){
+            this->prof = p;
+        }
+
+    public:
+        /* CONSTRUTOR */
+        Professor(){
+            this->qtdProfessores++;
+        }
+        /* DESTRUTOR */
+        ~Professor(){
+            this->qtdProfessores--;
+        }
+
+        Date getDataAdmissao(){
+            return this->dataAdmissao;
+        }
+        void setDataAdmissao(Date data){
+            this->dataAdmissao = data;
+        }
+
+        Date getDataDemissao(){
+            return this->dataDemissao;
+        }
+        void setDataDemissao(Date data){
+            this->dataDemissao = data;
+        }
+
+        string getCPF(){
+            return this->CPF;
+        }
+        void setCPF(string cpf){
+            this->CPF = cpf;
+        }
+
+        string getRG(){
+            return this->RG;
+        }
+        void setRG(string rg){
+            this->RG = rg;
+        }
+
+        string getEndereco(){
+            return this->endereco;
+        }
+        void setEndereco(string end){
+            this->endereco = end;
+        }
+
+        string getTelefone(){
+            return this->Telefone;
+        }
+        void setTelefone(string tel){
+            this->Telefone = tel;
+        }
+
+        string getEmail(){
+            return this->Email;
+        }
+        void setEmail(string email){
+            this->email = email;
+        }
+
+        string getNome(){
+            return this->Nome;
+        }
+        void setNome(string nome){
+            this->nome = nome;
+        }
+}
+
+#endif /*_PROFESSOR_H_*/
