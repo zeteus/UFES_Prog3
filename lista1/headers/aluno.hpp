@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#include "matricula.h"
+#include "matricula.hpp"
 
 class Aluno{
     /* ATRIBUTOS */

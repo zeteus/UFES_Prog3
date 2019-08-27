@@ -5,19 +5,20 @@
 #include <ctime>
 #include <string>
 
-#include "aluno.h"
-#include "turma.h"
+#include "aluno.hpp"
+#include "turma.hpp"
 
 class Matricula{
     /* ATRIBUTOS */
     private:
         int codigo, nota;
         string situacao;
-        Date diaMatricula;
         
+        Date diaMatricula;
         Aluno a;
         Turma t;
     /* METODOS */
+    
 }
 
 #endif /*_MATRICULA_H_*/

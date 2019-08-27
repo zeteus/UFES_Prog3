@@ -6,15 +6,15 @@
 #include <string>
 #include <vector>
 
-#include "professor.h"
-#include "horarioaula.h"
-#include "serie.h"
-#include "matricula.h"
+#include "professor.hpp"
+#include "horarioaula.hpp"
+#include "serie.hpp"
+#include "matricula.hpp"
 
 class Turma{
     /* ATRIBUTOS */
     private:
-        int código, vagas, ano, semestre;
+        int codigo, vagas, ano, semestre;
         Date dtInicio, dtFim;
         static int qtdTurmas;
         
@@ -24,9 +24,25 @@ class Turma{
         vector <Matricula*> matriculas;
     
     public:
+    /* CONSTRUTOR */
+        Turma(){
+            this->qtdTurmas++;
+        }
+        /* DESTRUTOR */
+        ~Turma(){
+            this->qtdTurmas--;
+        }
+
     /* METODOS */
         void alocarProfessor(Professor *p){
             p = new Professor();
+        }
+
+        int getCodigo(){
+            return this->codigo;
+        }
+        int setCodigo(int cod){
+            this->codigo = cod;
         }
 }
 

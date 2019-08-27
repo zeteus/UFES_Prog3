@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#include "curso.h"
+#include "curso.hpp"
 
 class Idioma{
     /* ATRIBUTOS */
