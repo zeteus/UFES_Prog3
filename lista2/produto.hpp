@@ -3,6 +3,9 @@
 
 #include <iostream>
 #include <ctime>
+#include <string>
+
+using namespace std;
 
 class Produto {
     private:
@@ -14,6 +17,7 @@ class Produto {
         static int qtdProdutos;
     
     public:
+        Produto(int c, string n, string d, int qe, float pb);
         Produto();
         ~Produto();
 
@@ -31,9 +35,6 @@ class Produto {
 
         float getPrecoBase();
         void setPrecoBase(float precoBase);
-
-        int getQtdProdutos();
-        void setQtdProdutos(int qtdProdutos);
 }
 
 #endif /*_PRODUTO_HPP_*/
