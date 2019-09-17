@@ -15,7 +15,7 @@ class Turma{
     /* ATRIBUTOS */
     private:
         int codigo, vagas, ano, semestre;
-        Date dtInicio, dtFim;
+        tm dtInicio, dtFim;
         static int qtdTurmas;
         
         Professor prof;

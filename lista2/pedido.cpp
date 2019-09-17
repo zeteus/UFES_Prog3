@@ -1,5 +1,16 @@
 #include "pedido.hpp"
 
+Pedido::Pedido(float vt, tm d, string s, string fp, int qp, Cliente c, Funcionario f) {
+    Pedido::setQtdPedidos(Pedido::getQtdPedidos() + 1);
+    Pedido::setValorTotal(vt);
+    Pedido::setData(d);
+    Pedido::setStatus(s);
+    Pedido::setFormaPgto(fp);
+    Pedido::setQtdPedidos(qp);
+    Pedido::setCliente(c);
+    Pedido::setFuncionario(f);
+}
+
 Pedido::Pedido() {
     Pedido::setQtdPedidos(Pedido::getQtdPedidos() + 1);
 }
@@ -16,11 +27,11 @@ void Pedido::setValorTotal(float valorTotal) {
     this.valorTotal = valorTotal;
 }
 
-Date Pedido::getData() {
+tm Pedido::getData() {
     return this.data;
 }
 
-void Pedido::setData(Date data) {
+void Pedido::setData(tm data) {
     this.data = data;
 }
 

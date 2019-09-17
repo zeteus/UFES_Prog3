@@ -2,12 +2,13 @@
 #define _PEDIDO_HPP_
 
 #include <iostream>
+#include <string>
 #include <ctime>
 
 class Pedido {
     private:
         float valorTotal;
-        Date data;
+        tm data;
         string status;
         string formaPgto;
         Cliente cliente;
@@ -15,14 +16,15 @@ class Pedido {
         static int qtdPedidos;
     
     public:
+        Pedido(float vt, tm d, string s, string fp, int qp, Cliente c, Funcionario f);
         Pedido();
         ~Pedido();
-
+        
         float getValorTotal();
         void setValorTotal(float valorTotal);
 
-        Date getData();
-        void setData(Date data);
+        tm getData();
+        void setData(tm data);
 
         string getStatus();
         void setStatus(string status);

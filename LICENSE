@@ -212,7 +212,7 @@ produce it from the Program, in the form of source code under the
 terms of section 4, provided that you also meet all of these conditions:
 
     a) The work must carry prominent notices stating that you modified
-    it, and giving a relevant date.
+    it, and giving a relevant tm.
 
     b) The work must carry prominent notices stating that it is
     released under this License and any conditions added under section
@@ -225,7 +225,7 @@ terms of section 4, provided that you also meet all of these conditions:
     additional terms, to the whole of the work, and all its parts,
     regardless of how they are packaged.  This License gives no
     permission to license the work in any other way, but it does not
-    invalidate such permission if you have separately received it.
+    invalitm such permission if you have separately received it.
 
     d) If the work has interactive user interfaces, each must display
     Appropriate Legal Notices; however, if the Program has interactive
@@ -327,7 +327,7 @@ modified object code on the User Product (for example, the work has
 been installed in ROM).
 
   The requirement to provide Installation Information does not include a
-requirement to continue to provide support service, warranty, or updates
+requirement to continue to provide support service, warranty, or uptms
 for a work that has been modified or installed by the recipient, or for
 the User Product in which it has been modified or installed.  Access to a
 network may be denied when the modification itself materially and

@@ -14,7 +14,7 @@ class Matricula{
         int codigo, nota;
         string situacao;
         
-        Date diaMatricula;
+        tm diaMatricula;
         Aluno a;
         Turma t;
     /* METODOS */

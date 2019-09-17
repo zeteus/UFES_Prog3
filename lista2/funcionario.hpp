@@ -2,12 +2,13 @@
 #define _FUNCIONARIO_HPP_
 
 #include <iostream>
+#include <string>
 #include <ctime>
 
 class Funcionario {
     private:
         string nome;
-        Date dataNascimento;
+        tm dataNascimento;
         string RG;
         string CPF;
         string endereco;
@@ -16,14 +17,15 @@ class Funcionario {
         string matricula;
         
     public:
+        Funcionario(string n, tm dn, string rg, string cpf, string en, string t, string em, string m);
         Funcionario();
         ~Funcionario();
 
         string getNome();
         void setNome(string nome);
 
-        Date getDataNascimento();
-        void setDataNascimento(Date dataNascimento);
+        tm getDataNascimento();
+        void setDataNascimento(tm dataNascimento);
 
         string getRG();
         void setRG(string RG);

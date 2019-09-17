@@ -15,7 +15,7 @@ class Turma{
     /* ATRIBUTOS */
     private:
         int codigo, vagas, ano, semestre;
-        Date dtInicio, dtFim;
+        tm dtInicio, dtFim;
         static int qtdTurmas;
         
         Professor prof;
@@ -73,17 +73,17 @@ class Turma{
             this->semestre = sem;
         }
 
-        Date getDtInicio(){
+        tm getDtInicio(){
             return this->dtInicio;
         }
-        void setDtInicio(Date dtInicio){
+        void setDtInicio(tm dtInicio){
             this->dtInicio = dtInicio;
         }
 
-        Date getDtFim(){
+        tm getDtFim(){
             return this->dtFim;
         }
-        void setDtFim(Date dtFim){
+        void setDtFim(tm dtFim){
             this->dtFim = dtFim;
         }
 }

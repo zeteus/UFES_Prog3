@@ -11,7 +11,7 @@
 class Professor{
     /* ATRIBUTOS */
     private:
-        Date dataAdmissao, dataDemissao;
+        tm dataAdmissao, dataDemissao;
         string CPF, RG, endereco, telefone, email, nome;
         static int qtdProfessores = 0;
         
@@ -32,17 +32,17 @@ class Professor{
             this->qtdProfessores--;
         }
 
-        Date getDataAdmissao(){
+        tm getDataAdmissao(){
             return this->dataAdmissao;
         }
-        void setDataAdmissao(Date data){
+        void setDataAdmissao(tm data){
             this->dataAdmissao = data;
         }
 
-        Date getDataDemissao(){
+        tm getDataDemissao(){
             return this->dataDemissao;
         }
-        void setDataDemissao(Date data){
+        void setDataDemissao(tm data){
             this->dataDemissao = data;
         }
 
