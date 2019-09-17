@@ -1,39 +1,46 @@
 #include "itemdepedido.hpp"
 
-ItemDePedido() {
+ItemDePedido::ItemDePedido(int qt, float pv, Pedido pe, Produto pr) {
+    ItemDePedido::setPedido(pe);
+    ItemDePedido::setProduto(pr);
+    ItemDePedido::setQuantidade(qt);
+    ItemDePedido::setPrecoVenda(pv);
 }
 
-~ItemDePedido() {
+ItemDePedido::ItemDePedido() {
 }
 
-Pedido getPedido() {
-    return this.pedido;
+ItemDePedido::~ItemDePedido() {
 }
 
-void setPedido(Pedido pedido) {
-    this.pedido = pedido;
+Pedido ItemDePedido::getPedido() {
+    return this->pedido;
 }
 
-Produto getProduto() {
-    return this.produto;
+void ItemDePedido::setPedido(Pedido pedido) {
+    this->pedido = pedido;
 }
 
-void setProduto(Produto produto) {
-    this.produto = produto;
+Produto ItemDePedido::getProduto() {
+    return this->produto;
 }
 
-int getQuantidade() {
-    return this.quantidade;
+void ItemDePedido::setProduto(Produto produto) {
+    this->produto = produto;
 }
 
-void setQuantidade(int quantidade) {
-    this.quantidade = quantidade;
+int ItemDePedido::getQuantidade() {
+    return this->quantidade;
 }
 
-float getPrecoVenda() {
-    return this.precoVenda;
+void ItemDePedido::setQuantidade(int quantidade) {
+    this->quantidade = quantidade;
 }
 
-void setPrecoVenda(float precoVenda) {
-    this.precoVenda = precoVenda;
+float ItemDePedido::getPrecoVenda() {
+    return this->precoVenda;
+}
+
+void ItemDePedido::setPrecoVenda(float precoVenda) {
+    this->precoVenda = precoVenda;
 }

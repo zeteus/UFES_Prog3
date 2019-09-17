@@ -3,6 +3,10 @@
 
 #include <iostream>
 #include <ctime>
+#include "pedido.hpp"
+#include "produto.hpp"
+
+using namespace std;
 
 class ItemDePedido {
     private:
@@ -12,6 +16,7 @@ class ItemDePedido {
         Produto produto;
 
     public:
+        ItemDePedido(int qt, float pv, Pedido pe, Produto pr);
         ItemDePedido();
         ~ItemDePedido();
 
@@ -26,6 +31,6 @@ class ItemDePedido {
 
         float getPrecoVenda();
         void setPrecoVenda(float precoVenda);
-}
+};
 
 #endif /*_ITEM_DE_PEDIDO_HPP_*/

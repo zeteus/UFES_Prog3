@@ -74,3 +74,11 @@ string Cliente::getEmail() {
 void Cliente::setEmail(string email) {
     this->email = email;
 }
+
+vector <Pedido *> Cliente::getPedidos() {
+    return this->pedidos;
+}
+
+void Cliente::setPedidos(vector <Pedido *> pedidos) {
+    this->pedidos = pedidos;
+}

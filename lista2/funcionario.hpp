@@ -4,6 +4,11 @@
 #include <iostream>
 #include <string>
 #include <ctime>
+#include <vector>
+
+#include "pedido.hpp"
+
+using namespace std;
 
 class Funcionario {
     private:
@@ -15,6 +20,7 @@ class Funcionario {
         string telefone;
         string email;
         string matricula;
+        vector <Pedido *> pedidos;
         
     public:
         Funcionario(string n, tm dn, string rg, string cpf, string en, string t, string em, string m);
@@ -44,6 +50,9 @@ class Funcionario {
 
         string getMatricula();
         void setMatricula(string matricula);
-}
+
+        vector <Pedido *> getPedidos();
+        void setPedidos(vector <Pedido *> pedidos);
+};
 
 #endif /*_FUNCIONARIO_HPP_*/

@@ -83,3 +83,11 @@ string Funcionario::getMatricula() {
 void Funcionario::setMatricula(string matricula) {
     this->matricula = matricula;
 }
+
+vector <Pedido *> Funcionario::getPedidos() {
+    return this->pedidos;
+}
+
+void Funcionario::setPedidos(vector <Pedido *> pedidos) {
+    this->pedidos = pedidos;
+}

@@ -4,6 +4,11 @@
 #include <iostream>
 #include <string>
 #include <ctime>
+#include <vector>
+
+#include "itemdepedido.hpp"
+
+using namespace std;
 
 class Pedido {
     private:
@@ -11,12 +16,11 @@ class Pedido {
         tm data;
         string status;
         string formaPgto;
-        Cliente cliente;
-        Funcionario funcionario;
+        vector <ItemDePedido *> itensdepedido;
         static int qtdPedidos;
     
     public:
-        Pedido(float vt, tm d, string s, string fp, int qp, Cliente c, Funcionario f);
+        Pedido(float vt, tm d, string s, string fp, int qp, vector <ItemDePedido *> idp);
         Pedido();
         ~Pedido();
         
@@ -35,11 +39,8 @@ class Pedido {
         int getQtdPedidos();
         void setQtdPedidos(int qtdPedidos);
 
-        Cliente getCliente();
-	    void setCliente(Cliente cliente);
-
-        Funcionario getFuncionario();
-	    void setFuncionario(Funcionario funcionario);
-}
+        vector <ItemDePedido *> getItemDePedidos();
+        void setItemDePedidos(vector <ItemDePedido *> itemdepedidos);
+};
 
 #endif /*_PEDIDO_HPP_*/
