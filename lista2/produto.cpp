@@ -1,5 +1,7 @@
 #include "produto.hpp"
 
+int Produto::qtdProdutos = 0;
+
 Produto::Produto(int c, string n, string d, int qe, float pb) { 
     Produto::setQtdProdutos(Produto::getQtdProdutos() + 1);
     Produto::setCodigo(c);
@@ -55,4 +57,12 @@ float Produto::getPrecoBase() {
 
 void Produto::setPrecoBase(float precoBase) {
     this->precoBase = precoBase;
+}
+
+int Produto::getQtdProdutos() {
+    return Produto::qtdProdutos;
+}
+
+void Produto::setQtdProdutos(int qtdProdutos) {
+    Produto::qtdProdutos = qtdProdutos;
 }

@@ -1,6 +1,6 @@
 #include "itemdepedido.hpp"
 
-ItemDePedido::ItemDePedido(int qt, float pv, Pedido pe, Produto pr) {
+ItemDePedido::ItemDePedido(int qt, float pv, Pedido* pe, Produto* pr) {
     ItemDePedido::setPedido(pe);
     ItemDePedido::setProduto(pr);
     ItemDePedido::setQuantidade(qt);
@@ -13,19 +13,19 @@ ItemDePedido::ItemDePedido() {
 ItemDePedido::~ItemDePedido() {
 }
 
-Pedido ItemDePedido::getPedido() {
+Pedido* ItemDePedido::getPedido() {
     return this->pedido;
 }
 
-void ItemDePedido::setPedido(Pedido pedido) {
+void ItemDePedido::setPedido(Pedido* pedido) {
     this->pedido = pedido;
 }
 
-Produto ItemDePedido::getProduto() {
+Produto* ItemDePedido::getProduto() {
     return this->produto;
 }
 
-void ItemDePedido::setProduto(Produto produto) {
+void ItemDePedido::setProduto(Produto* produto) {
     this->produto = produto;
 }
 

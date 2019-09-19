@@ -10,6 +10,11 @@
 
 using namespace std;
 
+class Cliente;
+class ItemDePedido;
+class Pedido;
+class Produto;
+
 class Funcionario {
     private:
         string nome;

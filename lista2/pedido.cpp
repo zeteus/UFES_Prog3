@@ -1,5 +1,7 @@
 #include "pedido.hpp"
 
+int Pedido::qtdPedidos = 0;
+
 Pedido::Pedido(float vt, tm d, string s, string fp, int qp, vector <ItemDePedido *> idp) {
     Pedido::setQtdPedidos(Pedido::getQtdPedidos() + 1);
     Pedido::setValorTotal(vt);
@@ -51,9 +53,17 @@ void Pedido::setFormaPgto(string formaPgto) {
 }
 
 int Pedido::getQtdPedidos() {
-    return this->qtdPedidos;
+    return Pedido::qtdPedidos;
 }
 
 void Pedido::setQtdPedidos(int qtdPedidos) {
-    this->qtdPedidos = qtdPedidos;
+    Pedido::qtdPedidos = qtdPedidos;
+}
+
+vector <ItemDePedido *> Pedido::getItemDePedidos() {
+    return this->itensdepedido;
+}
+
+void Pedido::setItemDePedidos(vector <ItemDePedido *> itemdepedidos) {
+    this->itensdepedido = itemdepedidos;
 }

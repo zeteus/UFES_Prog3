@@ -16,7 +16,7 @@ Cliente::Cliente(string n, tm dn, string rg, string cpf, string en, string t, st
 Cliente::Cliente() {
 }
 
-Cliente::Cliente() {
+Cliente::~Cliente() {
 }
 
 string Cliente::getNome() {

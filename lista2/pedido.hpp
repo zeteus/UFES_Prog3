@@ -10,6 +10,11 @@
 
 using namespace std;
 
+class Cliente;
+class Funcionario;
+class ItemDePedido;
+class Produto;
+
 class Pedido {
     private:
         float valorTotal;

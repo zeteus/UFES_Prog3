@@ -7,6 +7,11 @@
 
 using namespace std;
 
+class Cliente;
+class Funcionario;
+class ItemDePedido;
+class Pedido;
+
 class Produto {
     private:
         int codigo;
@@ -35,6 +40,9 @@ class Produto {
 
         float getPrecoBase();
         void setPrecoBase(float precoBase);
-}
+
+        int getQtdProdutos();
+        void setQtdProdutos(int qtdProdutos);
+};
 
 #endif /*_PRODUTO_HPP_*/
