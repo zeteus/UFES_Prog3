@@ -23,7 +23,7 @@ class Pedido {
         string formaPgto;
         vector <ItemDePedido *> itensdepedido;
         static int qtdPedidos;
-    
+
     public:
         Pedido(float vt, tm d, string s, string fp, int qp, vector <ItemDePedido *> idp);
         Pedido();
